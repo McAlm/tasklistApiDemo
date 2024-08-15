@@ -1,0 +1,44 @@
+
+##### LOCAL ###### 
+#camunda:
+#   client:
+#     mode: oidc
+#     auth:
+#       client-id: zeebe
+#       client-secret: zecret
+#     zeebe:
+#       enabled: true
+#       gateway-url: http://localhost:26500
+#       base-url: http://localhost:8088
+#     tasklist:
+#       enabled: true
+#       base-url: http://localhost:8082
+#       audience: tasklist-api
+
+##### SELF-MANAGED #####
+# camunda:
+#   client:
+#     mode: oidc
+#     auth:
+#       client-id: <yourApplicationClientId>
+#       client-secret: <yourApplicationClientSecret>
+#       issuer: https://<your.cluster.host.name>:443/auth/realms/camunda-platform
+#     zeebe:
+#       enabled: true
+#       gateway-url: https://<your.cluster.host.name>:443
+#       base-url: https://<your.cluster.host.name>.443/zeebe
+#     tasklist:
+#       enabled: true
+#       base-url: https://<your.cluster.host.name>:443/tasklist
+#       audience: tasklist-api
+
+##### SAAS #####
+# camunda:
+#   client:
+#     mode: saas
+#     auth:
+#       client-id: <yourClientId>
+#       client-secret: <yourClientSecret>
+#     cluster-id: <yourClusterId>
+#     region: <yourRegion:bru-2>
+
